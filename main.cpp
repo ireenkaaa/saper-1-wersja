@@ -1,9 +1,11 @@
 #include <iostream>
 #include "minesweeperboard.h"
 #include <stdlib.h>
+#include "field.h"
+#include "minesweeperboard.cpp"
 using std::cout, std::endl;
 
-MinesweeperBoard::MinesweeperBoard(int width, int height, GameMode mode) {
+/*MinesweeperBoard::MinesweeperBoard(int width, int height, GameMode mode) {
     if(width>0 && width<100)
     {
         width_=width;
@@ -103,12 +105,15 @@ void MinesweeperBoard::debug_display() const {
         }
         cout<<endl;
     }
-}
+}*/
 int main() {
-    MinesweeperBoard Board1(4, 7, DEBUG);
+    MinesweeperBoard Board1(9, 7, DEBUG);
     Board1.debug_display();
     cout<<Board1.getMineCount()<<endl;
     cout<<Board1.getBoardHeight()<<endl;
     cout<<Board1.getBoardWidth()<<endl;
+    cout<<Board1.countMines(0,1)<<endl;
+    cout<<Board1.hasFlag(0,1)<<endl;
+
     return 0;
 }
