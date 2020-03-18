@@ -318,13 +318,13 @@ INSTALL_GTEST:BOOL=ON
 PYTHON_EXECUTABLE:FILEPATH=PYTHON_EXECUTABLE-NOTFOUND
 
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=C:/Users/irena/project/cmake-build-debug/Google_tests/lib/googlemock
+gmock_BINARY_DIR:STATIC=C:/Users/irena/project/cmake-build-debug/lib/googlemock
 
 //Dependencies for the target
 gmock_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=C:/Users/irena/project/Google_tests/lib/googlemock
+gmock_SOURCE_DIR:STATIC=C:/Users/irena/project/lib/googlemock
 
 //Build all of Google Mock's own tests.
 gmock_build_tests:BOOL=OFF
@@ -333,16 +333,16 @@ gmock_build_tests:BOOL=OFF
 gmock_main_LIB_DEPENDS:STATIC=general;gmock;
 
 //Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=C:/Users/irena/project/cmake-build-debug/Google_tests/lib
+googletest-distribution_BINARY_DIR:STATIC=C:/Users/irena/project/cmake-build-debug/lib
 
 //Value Computed by CMake
-googletest-distribution_SOURCE_DIR:STATIC=C:/Users/irena/project/Google_tests/lib
+googletest-distribution_SOURCE_DIR:STATIC=C:/Users/irena/project/lib
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=C:/Users/irena/project/cmake-build-debug/Google_tests/lib/googletest
+gtest_BINARY_DIR:STATIC=C:/Users/irena/project/cmake-build-debug/lib/googletest
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=C:/Users/irena/project/Google_tests/lib/googletest
+gtest_SOURCE_DIR:STATIC=C:/Users/irena/project/lib/googletest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -510,7 +510,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -568,7 +568,7 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/project
-generated_dir:INTERNAL=C:/Users/irena/project/cmake-build-debug/Google_tests/lib/googletest/generated
+generated_dir:INTERNAL=C:/Users/irena/project/cmake-build-debug/lib/googletest/generated
 //ADVANCED property for variable: gmock_build_tests
 gmock_build_tests-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_build_samples

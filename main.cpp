@@ -107,13 +107,24 @@ void MinesweeperBoard::debug_display() const {
     }
 }*/
 int main() {
-    MinesweeperBoard Board1(9, 7, DEBUG);
+
+    MinesweeperBoard Board1(10, 10, EASY);
     Board1.debug_display();
-    cout<<Board1.getMineCount()<<endl;
-    cout<<Board1.getBoardHeight()<<endl;
-    cout<<Board1.getBoardWidth()<<endl;
-    cout<<Board1.countMines(0,1)<<endl;
-    cout<<Board1.hasFlag(0,1)<<endl;
+    cout<<"szerokosc planszy to "<<Board1.getBoardWidth()<<endl;
+    cout<<"ilość bomb to: "<<Board1.getMineCount()<<endl;
+    cout<<"wysokosc planszy to "<<Board1.getBoardHeight()<<endl;
+    cout<<"ilość bomb dookola pola to "<<Board1.countMines(9, 9)<<endl;
+    cout<<"Czy pole ma flage?( pamiętaj ze numerujemy od 0)  "<<Board1.hasFlag(4, 6)<<endl;
+    cout<<"Teraz ustawiamy flage  "<<endl;
+    Board1.toggleFlag(3, 9);
+    Board1.debug_display();
+    cout<<"Teraz odkrywamy pole"<<endl;
+    Board1.revealField(4,1);
+    //Board1.revealField(1,1);
+    cout<<"informacja o statusie gry"<<Board1.getGameState()<<endl;
+    Board1.debug_display();
+   cout<<"czy pole jest odkryte "<< Board1.isRevealed(3,0)<<endl;
+    cout<<"informacja o polu  "<< Board1.getFieldInfo(4,1)<<endl;
 
     return 0;
 }

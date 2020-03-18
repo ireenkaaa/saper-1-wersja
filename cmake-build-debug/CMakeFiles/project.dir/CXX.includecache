@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/irena/project/field.h
+
 C:/Users/irena/project/main.cpp
 iostream
 -
@@ -13,6 +15,14 @@ minesweeperboard.h
 C:/Users/irena/project/minesweeperboard.h
 stdlib.h
 -
+field.h
+C:/Users/irena/project/field.h
+minesweeperboard.cpp
+C:/Users/irena/project/minesweeperboard.cpp
+
+C:/Users/irena/project/minesweeperboard.cpp
 
 C:/Users/irena/project/minesweeperboard.h
+field.h
+C:/Users/irena/project/field.h
 
