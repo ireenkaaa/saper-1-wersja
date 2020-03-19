@@ -1,21 +1,13 @@
-//
-// Created by irena on 16.03.2020.
-//
 
 #ifndef PROJECT_MINESWEEPERBOARD_H
 #define PROJECT_MINESWEEPERBOARD_H
 #include "field.h"
-enum GameMode  { DEBUG, EASY, NORMAL, HARD };
+enum GameMode  { DEBUG, EASY=1, NORMAL=2, HARD=3 };
 enum GameState { RUNNING, FINISHED_WIN, FINISHED_LOSS };
 class MinesweeperBoard
 {
-    Field board_[100][100];
-    int width_;
-    int height_;
-    int number_of_mines_;
-    GameState game_status;
 public:
-    MinesweeperBoard(int width=10, int height=10, GameMode mode=EASY);
+    MinesweeperBoard(int width=10, int height=10, GameMode mode=DEBUG);
     ~MinesweeperBoard();
     void debug_display() const;
     int getBoardWidth() const;
@@ -28,9 +20,16 @@ public:
     bool isRevealed(int x, int y) const;
     char getFieldInfo(int x, int y) const;
     GameState getGameState() const;
+
+private:
+    Field board_[100][100];
+    int width_;
+    int height_;
+    int number_of_mines_;
+    GameState game_status;
+    GameMode mode_;
     bool isFirstMove();
     bool whenWin() const;
-
 
 };
 #endif //PROJECT_MINESWEEPERBOARD_H
